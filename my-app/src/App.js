@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChildArea } from "./ChirdArea";
 import "./style.css";
 
 export const App = () => {
@@ -9,8 +10,11 @@ export const App = () => {
 
   return (
     <div className="App">
-      <p>{count}</p>
-      <button onClick={onClickCountUp}>カウントアップ</button>
+      <input/>
+      <br/>
+      <br/>
+      <button>表示</button>
+      <ChildArea/>
     </div>
   );
 };
