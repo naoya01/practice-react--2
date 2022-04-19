@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChildArea } from "./ChirdArea";
+import { ChildArea } from "./ChildArea";
 import "./style.css";
 
 export const App = () => {
