@@ -1,7 +1,18 @@
-export const ChildArea = () => {
+const style = {
+  width: "100%" ,
+  height: "200px",
+  backgroundColor: "khaki"
+}
+
+export const ChildArea = (props) => {
+  const {open} = props;
   return (
-    <div>
-      <p>コンポーネント</p>
-    </div>
+    <>
+    {open ? (
+       <div style={style} >
+          <p>コンポーネント</p>
+      </div>
+    ) : null}
+    </>
   );
 };
