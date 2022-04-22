@@ -1,6 +1,6 @@
 import React, { useState,useCallback } from "react";
 import { ChildArea } from "./ChildArea";
-import "./style.css";
+import "./style.scss";
 
 export const App = () => {
   const [text, setText] = useState("");
