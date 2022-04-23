@@ -1,5 +1,6 @@
 import React, { useState,useCallback } from "react";
 import { ChildArea } from "./ChildArea";
+import { InlinStyle } from "./components/inlinStyle";
 import "./style.scss";
 
 export const App = () => {
@@ -13,11 +14,7 @@ export const App = () => {
 
   return (
     <div className="App">
-      <input value={text} onChange={onChangeText} />
-      <br/>
-      <br/>
-      <button onClick={onClickOpen}>表示</button>
-      <ChildArea open={open} onClickClose={onClickClose} />
+      <InlinStyle />
     </div>
   );
 };
