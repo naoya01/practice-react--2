@@ -1,0 +1,26 @@
+.container{
+  border: solid 2px  blue;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.title {
+  margin: 0px;
+  color: #3d84a8;
+}
+.button {
+  background-color: #abedd8;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  &:hover{
+    transition: .2s;
+    background-color: #3d84a8;
+    color: #fff;
+  }
+};
