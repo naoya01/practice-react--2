@@ -6,6 +6,7 @@
     "gatsby-plugin-emotion": "^7.12.1",
     "node": "^17.7.2",
     "node-sass": "^7.0.1",
+    "react-router-dom": "^6.3.0",
     "sass": "^1.50.1"
   }
 }
