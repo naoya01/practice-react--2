@@ -1,11 +1,13 @@
 import { BrowserRouter, Link} from "react-router-dom";
-
+import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { Router } from "./router/Router";
 import "./App.css";
 
 
 function App() {
   return (
+    <>
+    <PrimaryButton>テスト</PrimaryButton>
     <BrowserRouter>
       <div className="App">
       <Link to={"/"}>Home</Link><br/>
@@ -16,6 +18,7 @@ function App() {
       <Router />
 
     </BrowserRouter>
+    </>
   );
 }
 
