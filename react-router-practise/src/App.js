@@ -4,7 +4,18 @@ import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { Router } from "./router/Router";
 import "./App.css";
 import { SearchInput } from "./components/molecules/SearchInput";
+import { UserCard } from "./components/ organisms/user/UserCard";
 
+const user = {
+  name: "じゃけえ",
+  image: "https://source.unsplash.com/NE0XGVKTmcA",
+  email: "12345.com",
+  phone: "000-0000-0000",
+  company: {
+    name: "テスト株式会社"
+  },
+  website: "https://google.com"
+};
 
 function App() {
   return (
@@ -13,8 +24,9 @@ function App() {
     <SecondaryButton>検索</SecondaryButton>
     <br/>
     <SearchInput />
+    <UserCard user={user}/>
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <div className="App">
       <Link to={"/"}>Home</Link><br/>
       <Link to={"/page1"}>Page1</Link><br/>
@@ -23,7 +35,7 @@ function App() {
       
       <Router />
 
-    </BrowserRouter>
+    </BrowserRouter> */}
     </>
   );
 }
