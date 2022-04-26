@@ -6,6 +6,7 @@ import "./App.css";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/ organisms/user/UserCard";
 import { HeaderOnly } from "./components/templates/HeaderOnly";
+import { DefaultLayout } from "./components/templates/DefaultLayout";
 
 const user = {
   name: "じゃけえ",
@@ -20,7 +21,7 @@ const user = {
 
 function App() {
   return (
-    <HeaderOnly>
+    <DefaultLayout>
     <PrimaryButton>テスト</PrimaryButton>
     <SecondaryButton>検索</SecondaryButton>
     <br/>
@@ -37,7 +38,7 @@ function App() {
       <Router />
 
     </BrowserRouter> */}
-    </HeaderOnly>
+    </DefaultLayout>
   );
 }
 
