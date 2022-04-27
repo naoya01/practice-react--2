@@ -7,6 +7,7 @@ import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/ organisms/user/UserCard";
 import { HeaderOnly } from "./components/templates/HeaderOnly";
 import { DefaultLayout } from "./components/templates/DefaultLayout";
+import { UserProvider } from "./providers/UserProvider";
 
 const user = {
   name: "じゃけえ",
@@ -21,7 +22,9 @@ const user = {
 
 function App() {
   return (
+
     <Router></Router>
+
     // <DefaultLayout>
     // <PrimaryButton>テスト</PrimaryButton>
     // <SecondaryButton>検索</SecondaryButton>
