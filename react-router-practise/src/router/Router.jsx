@@ -26,8 +26,8 @@ export const Router = () => {
       <Route path="/page2/:id" element={<UrlParameter />} />
       <Route path="*" element={<Page404 />} /> */}
 
-      <Route path="/" element={<Top/>} />
-      <Route  path="/users" element={<Users/>} />
+      <Route path="/" element={<Top />} />
+      <Route path="/users" element={<Users />} />
     </Routes>
     </BrowserRouter>
     </>

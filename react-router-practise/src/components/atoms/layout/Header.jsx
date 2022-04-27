@@ -1,11 +1,16 @@
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter, Link,useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { Top } from "../../pages/Top";
+import { Users } from "../../pages/Users";
 export const Header = () =>{
+
   return(
     <BrowserRouter>
     <SHeader>
+
       <SLink to = "/">HOME</SLink>
       <SLink to = "/users">USERS</SLink>
+
     </SHeader>
     </BrowserRouter>
   );
