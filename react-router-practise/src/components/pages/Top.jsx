@@ -1,9 +1,14 @@
+import { useContext } from "react";
 import {useNavigate} from "react-router-dom"
 import styled from "styled-components";
+import { UserContext } from "../../providers/UserProvider";
 import { SecondaryButton } from "../atoms/button/SecondaryButton";
 import { DefaultLayout } from "../templates/DefaultLayout";
 export const Top = () => {
   const navigate = useNavigate();
+  const {setUserInfo} = useContext(UserContext);
+
+  
   const onClickadmin = () => navigate("/users", {state:{ isAdmin: true }});
   const onClickGeneral = () =>  navigate("/users", {state:{ isAdmin: false }});
   return(
