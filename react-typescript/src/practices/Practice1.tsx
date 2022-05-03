@@ -2,11 +2,11 @@ import React from "react";
 
 
 export const Practice1 = () =>{
-   const onClickPractice = (
-    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-  ) => {
-    alert("a");
+  const calcTotalFee = (num: number) => {
+    const total = num * 1.1;
+    console.log(total);
   };
+  const onClickPractice = () => calcTotalFee(1000);
 
   return(
     <div>
