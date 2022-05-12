@@ -4,6 +4,7 @@ import { useState } from "react";
 import { InputTodo } from "./components/InputTodo";
 import { CompleteTodo } from "./components/CompleteTodo";
 import { IncompleteTodo } from "./components/IncompleteTodo";
+import { CountUp } from "./components/CountUp";
 
 
 function App() {
@@ -26,7 +27,6 @@ function App() {
   };
   const onClickComplete = (index) => {
     const newIncompleteTodos = [...incompleteTodos];
-    console.log(newIncompleteTodos);
     newIncompleteTodos.splice(index, 1);
 
     const newCompleteTodos = [...completeTodos, incompleteTodos[index]];
@@ -56,6 +56,8 @@ function App() {
 
     
       <CompleteTodo todos={completeTodos} onClickBack={onClickBack} />
+
+      <CountUp/>
     </>
 
   );
